@@ -23,7 +23,7 @@ var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니�
 function GetPoint(lat, lng) {
         //var point = m_projection.pointFromCoords(new daum.maps.LatLng(lat, lng));
         var markerPosition  = new daum.maps.LatLng(lat, lng); 
-        return markerPosition.toString();
+        //return markerPosition.toString();
 
         var marker = new daum.maps.Marker({
     		position: markerPosition
