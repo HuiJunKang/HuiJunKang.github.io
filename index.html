@@ -10,7 +10,9 @@
 
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ac31de2cbf3c7a8ffeb7a08c3c97e5a2"></script>
 <script>
-	
+
+
+
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = { 
         center: new daum.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
@@ -18,9 +20,14 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
     };
 
 var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+function GetPoint(lat, lng) {
+       
+        var markerPosition  = new daum.maps.LatLng(lat, lng)
+        return markerPosition.toString();
+    }
 
 // 마커가 표시될 위치입니다 
-var markerPosition  = new daum.maps.LatLng(33.450701, 126.570667); 
+; 
 
 // 마커를 생성합니다
 var marker = new daum.maps.Marker({
